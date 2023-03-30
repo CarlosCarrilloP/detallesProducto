@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trenzatress</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- libreria que vamos a utililzar para los alerts es Sweet alert --> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="media/img/logo.jpg" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <div class="text">
+                <h1>Cordeleria de alta calidad</h1>
+                <p>
+                    En la actualidad Trenzatress S.L. es una de las empresas más destacadas en el sector de la
+                    decoración,
+                    especializada en la fabricación y distribución de cordones para rieles extensibles de cortinas.
+                    Además,
+                    ofrecemos una amplia variedad de cordones para panel japonés, rieles de aluminio, estores, hilos
+                    para mosquiteras
+                    y en general cordones trenzados para la decoración.
+                </p>
+                <div class="boton-productos">Ver Productos</div>
+            </div>
+            <img src="media/img/img.jpg">
+        </div>
+        <div class="cards">
+            <div class="calidad">
+                <h2>Calidad</h2>
+                <p>
+                    La calidad en la fabricación y el servicio es para nosotros la mayor inversión y garantía de futuro.
+                    Y unos productos fabricados con materias primas de alta calidad, contrastada y garantizada que
+                    responden
+                    al deseo de los clientes más exigentes.
+                </p>
+            </div>
+            <div class="compromiso">
+                <h2>Compromiso</h2>
+                <p>
+                    Comprometidos con dar el servicio más eficiente en tiempo de entrega y generar confianza a nuestros
+                    clientes en nuestros productos.
+                </p>
+            </div>
+            <div class="valores">
+                <h2>Valores</h2>
+                <p>
+                    La principal premisa y política por la que nos regimos en Trenzatress es un servicio personalizado a
+                    las necesidades de nuestros clientes.
+                </p>
+            </div>
+        </div>
+        <div class="formulario">
+            <h1>Contacta con nosotros</h1>
+            <div class="info">
+                <input class="nom" type="text" placeholder="Nombre">
+                <input class="tel" type="text" placeholder="Telefono">
+            </div>
+            <div class="info">
+                <input class="apel" type="text" placeholder="Apellidos">
+                <input class="correo" type="text" placeholder="Correo">
+            </div>
+            <textarea cols="60" rows="10" placeholder="Tu mensaje"></textarea>
+            <br>
+            <button type="submit" onclick="showAlert()">Enviar</button>
+
+
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="high-footer">
+            <div class="localizacion">
+                <h4>Localizacion</h4>
+                <ul>
+                    <li>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</li>
+                    <li>03360 Callosa de Segura, Alicante</li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Teléfono: +34 965310199</li>
+                    <li>Correo electronico: trenzatress@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="redes">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li>Twitter: @trenzatress</li>
+                    <li>Instagram: @trenzatr3ss</li>
+                    <li>Facebook: @trenzatress</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="low-footer">
+            TrenzaTress, S.L
+        </div>
+
+    </footer>
+    
+    <script src="js/navigation.js"></script>
+</body>
+</html>
