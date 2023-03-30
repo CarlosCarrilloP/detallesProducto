@@ -11,9 +11,9 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
 //funcion alert al enviar el formulario
-function showAlert(){
+//function showAlert(){
 
 
-    swal("Gracias Capo", "Intentaré responderte lo antes posible", "success");
+    //swal("Gracias Capo", "Intentaré responderte lo antes posible", "success");
 
-}showAlert();
+//}showAlert();

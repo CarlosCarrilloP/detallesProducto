@@ -265,5 +265,47 @@ body footer .low-footer{
     padding: 2%;
 }
 
-
-
+.descuento{
+    background-color: #C29A56;
+    width: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    justify-content: center;
+    color:#Ffffff;
+}
+/*Style para detalles.html*/
+.productos {  display: grid;
+    grid-template-columns: 0.4fr 1.5fr 1.5fr 1.5fr 0.4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    grid-template-areas:
+      ". producto1 producto2 producto3 ."
+      ". producto4 producto5 producto6 ."
+      ". producto7 producto8 producto9 .";
+  }
+  
+  .producto1 { grid-area: producto1; }
+  
+  .producto2 { grid-area: producto2; }
+  
+  .producto3 { grid-area: producto3; }
+  
+  .producto4 { grid-area: producto4; }
+  
+  .producto5 { grid-area: producto5; }
+  
+  .producto6 { grid-area: producto6; }
+  
+  .producto7 { grid-area: producto7; }
+  
+  .producto8 { grid-area: producto8; }
+  
+  .producto9 { grid-area: producto9; }
+  

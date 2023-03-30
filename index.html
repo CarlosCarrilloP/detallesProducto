@@ -14,19 +14,21 @@
 <body>
 
     <header>
-        <img class="logo" src="media/img/logo.jpg" alt="Logo">
+        <a href="index.html"><img id="logo"  class="logo" src="media/img/logo.jpg" alt="Logo"></a>
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="detalleProducto.html">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <main>
+        <div class="descuento"> <p>Descuentos a pedidos superiores de 200€</p>  </div>
         <div class="intro">
             <div class="text">
                 <h1>Cordeleria de alta calidad</h1>
@@ -68,7 +70,7 @@
                 </p>
             </div>
         </div>
-        <div class="formulario">
+        <div id="contacto" class="formulario">
             <h1>Contacta con nosotros</h1>
             <div class="info">
                 <input class="nom" type="text" placeholder="Nombre">
