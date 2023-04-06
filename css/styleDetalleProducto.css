@@ -292,7 +292,7 @@ body footer .low-footer{
       ". imagenProducto imagenProducto imagenProducto descripcionProducto descripcionProducto descripcionProducto ."
       ". imagenProducto imagenProducto imagenProducto cantidadProducto cantidadProducto cantidadProducto ."
       ". . . . cestaProducto . comprarProducto ."
-      ". anchura1 anchura2 anchura3 anchura4 anchura5 anchura6 ."
+      ". button-container button-container button-container button-container button-container button-container ."
       ". lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto ."
       ". descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto ."
       ". low-footer low-footer low-footer low-footer low-footer low-footer .";
@@ -309,6 +309,23 @@ body footer .low-footer{
   .cestaProducto { grid-area: cestaProducto; }
   
   .comprarProducto { grid-area: comprarProducto; }
+
+  /* Estilo para el contenedor de los botones */
+
+  .button-container {
+    display: flex; /* Pone los elementos en línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Añade un espacio de 10px entre los botones */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "anchura1 anchura2 anchura3 anchura4 anchura5 anchura6";
+    grid-area: button-container;
+    
+  }
+  .anchura6 { grid-area: anchura6; }
   
   .anchura1 { grid-area: anchura1; }
   
@@ -319,8 +336,57 @@ body footer .low-footer{
   .anchura4 { grid-area: anchura4; }
   
   .anchura5 { grid-area: anchura5; }
+
+/* Estilo para cada botón */
+  .size-btn {
+    padding: 8px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   
-  .anchura6 { grid-area: anchura6; }
+  /* Estilo para el botón activo */
+  .size-btn.active {
+    background-color: #C29A56;
+    color: #fff;
+  }
+
+  .anchura{
+    margin-left: 1%;
+  }
+  .cestaProducto,
+.comprarProducto {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cestaProducto button,
+.comprarProducto button {
+  background-color: #C29A56;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cestaProducto button:hover,
+.comprarProducto button:hover {
+  background-color: #D3B98D;
+}
+
+
+
+
+
 
   /*-------------Lucia--------------*/
   .lineaProducto { grid-area: lineaProducto; }
@@ -328,4 +394,16 @@ body footer .low-footer{
   .descrpcionProducto { grid-area: descrpcionProducto; }
   
   .low-footer { grid-area: low-footer; }
+  
+  
+  
+  
+  
+  
+  
+
+  
+ 
+
+  
   

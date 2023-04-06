@@ -1,83 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>TrenzaTress</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styleDetalleProducto.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- libreria que vamos a utililzar para los alerts es Sweet alert --> 
+    <title>TrenzaTress</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/styleDetalleProducto.css" />
+
+    <!-- libreria que vamos a utililzar para los alerts es Sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</head>
-<body>
+    <script src="js/detalles.js"></script>
+  </head>
+  <body>
     <header>
-        <a href="index.html"><img id="logo"  class="logo" src="media/img/logo.jpg" alt="Logo"></a>
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="detalleProducto.html">Sobre Nosotros</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      <a href="index.html"
+        ><img id="logo" class="logo" src="media/img/logo.jpg" alt="Logo"
+      /></a>
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="detalleProducto.html">Sobre Nosotros</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="descuento">Descuentos a pedidos superiores de 200€</div>
-        <!--- Joaquin-------->
-        <div class="detalleproducto">
-            <div class="descripcionProducto"></div>
-            <div class="imagenProducto"></div>
-            <div class="cantidadProducto"></div>
-            <!------Carlos------>
-            <div class="cestaProducto"></div>
-            <div class="comprarProducto"></div>
-            <div class="anchura1"></div>
-            <div class="anchura2"></div>
-            <div class="anchura3"></div>
-            <div class="anchura4"></div>
-            <div class="anchura5"></div>
-            <div class="anchura6"></div>
-            <!------Lucia------>
-            <div class="lineaProducto"></div>
-            <div class="descrpcionProducto"></div>
-          </div>
+      <div class="descuento">Descuentos a pedidos superiores de 200€</div>
+      <!--- Joaquin-------->
+      <div class="detalleproducto">
+        <div class="descripcionProducto"></div>
+        <div class="imagenProducto"></div>
+        <div class="cantidadProducto"></div>
+        <!------Carlos------>
+        <div class="cestaProducto">
+          <button>Añadir a la cesta</button>
+        </div>
+        <div class="comprarProducto">
+          <button>Comprar</button>
+        </div>
 
+        <div class="button-container">
+          
+          <div class=" anchura anchura1">
+            <button class="size-btn active">1mm</button>
+          </div>
+          <div class="anchura anchura2">
+            <button class="size-btn">2mm</button>
+          </div>
+          <div class="anchura anchura3">
+            <button class="size-btn">3mm</button>
+          </div>
+          <div class="anchura anchura4">
+            <button class="size-btn">4mm</button>
+          </div>
+          <div class="anchura anchura5">
+            <button class="size-btn">5mm</button>
+          </div>
+          <div class="anchura anchura6">
+            <button class="size-btn">6mm</button>
+          </div>
+        </div>
+
+        <!------Lucia------>
+        <div class="lineaProducto"></div>
+        <div class="descrpcionProducto"></div>
+      </div>
     </main>
     <footer>
-        <div class="high-footer">
-            <div class="localizacion">
-                <h4>Localizacion</h4>
-                <ul>
-                    <li>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</li>
-                    <li>03360 Callosa de Segura, Alicante</li>
-                </ul>
-            </div>
-            <div class="contacto">
-                <h4>Contacto</h4>
-                <ul>
-                    <li>Teléfono: +34 965310199</li>
-                    <li>Correo electronico: trenzatress@gmail.com</li>
-                </ul>
-            </div>
-
-            <div class="redes">
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li>Twitter: @trenzatress</li>
-                    <li>Instagram: @trenzatr3ss</li>
-                    <li>Facebook: @trenzatress</li>
-                </ul>
-            </div>
+      <div class="high-footer">
+        <div class="localizacion">
+          <h4>Localizacion</h4>
+          <ul>
+            <li>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</li>
+            <li>03360 Callosa de Segura, Alicante</li>
+          </ul>
+        </div>
+        <div class="contacto">
+          <h4>Contacto</h4>
+          <ul>
+            <li>Teléfono: +34 965310199</li>
+            <li>Correo electronico: trenzatress@gmail.com</li>
+          </ul>
         </div>
 
-        <div class="low-footer">
-            TrenzaTress, S.L
+        <div class="redes">
+          <h4>Redes Sociales</h4>
+          <ul>
+            <li>Twitter: @trenzatress</li>
+            <li>Instagram: @trenzatr3ss</li>
+            <li>Facebook: @trenzatress</li>
+          </ul>
         </div>
+      </div>
 
+      <div class="low-footer">TrenzaTress, S.L</div>
     </footer>
-</body>
+  </body>
 </html>
