@@ -431,23 +431,22 @@ body footer .low-footer{
       ". lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto ."
       ". descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto ."
       ". low-footer low-footer low-footer low-footer low-footer low-footer .";
-  }
-  /*---------------Joaquin--------------*/
-  .descripcionProducto { grid-area: descripcionProducto; }
-  
-  .imagenProducto { grid-area: imagenProducto; }
-  
-  .cantidadProducto { grid-area: cantidadProducto; }
+}
 
-  /*--------------Carlos----------*/
+/*---------------Joaquin--------------*/
+.descripcionProducto { grid-area: descripcionProducto; }
   
-  .cestaProducto { grid-area: cestaProducto; }
+.imagenProducto { grid-area: imagenProducto; }
   
-  .comprarProducto { grid-area: comprarProducto; }
+.cantidadProducto { grid-area: cantidadProducto; }
 
-  /* Estilo para el contenedor de los botones */
+/*--------------Carlos----------*/
+.cestaProducto { grid-area: cestaProducto; }
+  
+.comprarProducto { grid-area: comprarProducto; }
 
-  .button-container {
+/* Estilo para el contenedor de los botones */
+.button-container {
     display: flex; /* Pone los elementos en línea */
     justify-content: center; /* Centra los elementos horizontalmente */
     gap: 10px; /* Añade un espacio de 10px entre los botones */
@@ -459,21 +458,23 @@ body footer .low-footer{
       "anchura1 anchura2 anchura3 anchura4 anchura5 anchura6";
     grid-area: button-container;
     
-  }
-  .anchura6 { grid-area: anchura6; }
+}
+
+.anchura6 { grid-area: anchura6; }
   
-  .anchura1 { grid-area: anchura1; }
+.anchura1 { grid-area: anchura1; }
   
-  .anchura2 { grid-area: anchura2; }
+.anchura2 { grid-area: anchura2; }
   
-  .anchura3 { grid-area: anchura3; }
+.anchura3 { grid-area: anchura3; }
   
-  .anchura4 { grid-area: anchura4; }
+.anchura4 { grid-area: anchura4; }
   
-  .anchura5 { grid-area: anchura5; }
+.anchura5 { grid-area: anchura5; }
+
 
 /* Estilo para cada botón */
-  .size-btn {
+.size-btn {
     padding: 8px;
     font-size: 16px;
     color: #555;
@@ -481,41 +482,42 @@ body footer .low-footer{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
-  /* Estilo para el botón activo */
-  .size-btn.active {
+/* Estilo para el botón activo */
+.size-btn.active {
     background-color: #C29A56;
     color: #fff;
-  }
+}
 
-  .anchura{
+.anchura{
     margin-left: 1%;
-  }
-  .cestaProducto,
+}
+
+.cestaProducto,
 .comprarProducto {
-  display: inline-block;
-  margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .cestaProducto button,
 .comprarProducto button {
-  background-color: #C29A56;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
+    background-color: #C29A56;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .cestaProducto button:hover,
 .comprarProducto button:hover {
-  background-color: #D3B98D;
+    background-color: #D3B98D;
 }
 
 
@@ -523,22 +525,49 @@ body footer .low-footer{
 
 
 
-  /*-------------Lucia--------------*/
-  .lineaProducto { grid-area: lineaProducto; }
+/*-------------Lucia--------------*/
+.lineaProducto { grid-area: lineaProducto; }
   
-  .descrpcionProducto { grid-area: descrpcionProducto; }
+.descrpcionProducto { grid-area: descrpcionProducto; }
   
-  .low-footer { grid-area: low-footer; }
-  
-  
-  
-  
-  
-  
-  
+/*Estilos para la barra separadora de ambas partes*/
+.lineaProducto{
+    padding-top: 3%;
+}
 
+.rellenoLineaProducto{
+    background-color: #C29A56;
+    width: 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    justify-content: center;
+}
+  
+.descrpcionProducto{
+    background-color: #d3b98d;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.descrpcionProducto .rellenodescrpcionProducto .tituloApartado {
+    padding-top: 1%;
+    padding-left: 3%;
+    font-size: 1.4rem;
+}
+  
+.descrpcionProducto .rellenodescrpcionProducto .nombreProducto {
+    padding-top: 1%;
+    padding-left: 3%;
+    font-size: 1.2rem;
+}
+  
+.descrpcionProducto .rellenodescrpcionProducto .especifProducto {
+    padding-top: 1%;
+    padding-left: 5%;
+}
   
  
 
   
-  
+.low-footer { grid-area: low-footer; }  
