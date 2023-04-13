@@ -1,3 +1,8 @@
+
+
+
+
+
 //Funcion para activar y desactivar la seleccion de los botones
 // Espera a que la página haya terminado de cargar
 window.addEventListener('load', function() {
@@ -37,4 +42,18 @@ function añadirALaCesta() {
     const comprarBtn = document.querySelector('.comprarProducto button');
     comprarBtn.addEventListener('click', comprar);
   });
+ 
   
+  var cantidadInput = document.getElementById("cantidad");
+var aumentarBtn = document.getElementById("mas-btn");
+var disminuirBtn = document.getElementById("menos-btn");
+
+aumentarBtn.addEventListener("click", function() {
+  cantidadInput.value++;
+});
+
+disminuirBtn.addEventListener("click", function() {
+  if (cantidadInput.value > 1) {
+    cantidadInput.value--;
+  }
+});

@@ -1,106 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>TrenzaTress</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="css/styleDetalleProducto.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- libreria que vamos a utililzar para los alerts es Sweet alert -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="js/detalles.js"></script>
-  </head>
-  <body>
-    <header>
-      <a href="index.html"
-        ><img id="logo" class="logo" src="media/img/logo.jpg" alt="Logo"
-      /></a>
-      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-      <nav class="nav" id="nav">
-        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-        <ul class="nav-list">
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="detalleProducto.html">Sobre Nosotros</a></li>
-          <li><a href="index.html#contacto">Contacto</a></li>
+  <title>TrenzaTress</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/styleDetalleProducto.css" />
+
+  <!-- libreria que vamos a utililzar para los alerts es Sweet alert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/detalles.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img id="logo" class="logo" src="media/img/logo.jpg" alt="Logo" /></a>
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav">
+      <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+      <ul class="nav-list">
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="detalleProducto.html">Sobre Nosotros</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="descuento">Descuentos a pedidos superiores de 200€</div>
+    <!--- Joaquin-------->
+    <div class="detalleproducto">
+      <div class="descripcionProducto">
+        <h1 class="tituloDescripcion">Bobina/Cono hilo algodon ecologico</h1>
+        <ul class="descripcion1">
+          <li>Cono o bobina de hilo para coser de algodón ecologico certificado por GOTS es muy resistente de alta
+            calidad, está mercerizado por lo que no encoge al lavar. Sirve para coser con máquinas industriales,
+            remalladoras, overlock, recubridoras y para bordar.</li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="descuento">Descuentos a pedidos superiores de 200€</div>
-      <!--- Joaquin-------->
-      <div class="detalleproducto">
-        <div class="descripcionProducto"></div>
-        <div class="imagenProducto"></div>
-        <div class="cantidadProducto"></div>
-        <!------Carlos------>
-        <div class="cestaProducto">
-          <button>Añadir a la cesta</button>
-        </div>
-        <div class="comprarProducto">
-          <button>Comprar</button>
-        </div>
-
-        <div class="button-container">
-          
-          <div class=" anchura anchura1">
-            <button class="size-btn active">1mm</button>
-          </div>
-          <div class="anchura anchura2">
-            <button class="size-btn">2mm</button>
-          </div>
-          <div class="anchura anchura3">
-            <button class="size-btn">3mm</button>
-          </div>
-          <div class="anchura anchura4">
-            <button class="size-btn">4mm</button>
-          </div>
-          <div class="anchura anchura5">
-            <button class="size-btn">5mm</button>
-          </div>
-          <div class="anchura anchura6">
-            <button class="size-btn">6mm</button>
-          </div>
-        </div>
-
-        <!------Lucia------>
-        <div class="lineaProducto"></div>
-        <div class="descrpcionProducto"></div>
+        <ul class="descripcion2">
+          <li><Strong> Composición:</Strong> 100 % algodón GOTS</li>
+          <li><Strong> Cantidad:</Strong>  5000 m (cono)</li>
+          <li><Strong> Grosor:</Strong>  NE 30/2</li>
+          <li><Strong> Color:</Strong>  Negro 4806</li>
+          <li><Strong> Marca:</Strong>  Scanfil Organic</li>
+          <li><Strong> Seguro:</Strong> 5 años garantia</li>
+        </ul>
+        <fieldset class="valoracion">
+          <input type="radio" id="estrella1" name="valoracion" value="1">
+          <label for="estrella1"></label>
+          <input type="radio" id="estrella2" name="valoracion" value="2">
+          <label for="estrella2"></label>
+          <input type="radio" id="estrella3" name="valoracion" value="3">
+          <label for="estrella3"></label>
+          <input type="radio" id="estrella4" name="valoracion" value="4">
+          <label for="estrella4"></label>
+          <input type="radio" id="estrella5" name="valoracion" value="5">
+          <label for="estrella5"></label>
+        </fieldset>
       </div>
-    </main>
-    <footer>
-      <div class="high-footer">
-        <div class="localizacion">
-          <h4>Localizacion</h4>
-          <ul>
-            <li>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</li>
-            <li>03360 Callosa de Segura, Alicante</li>
-          </ul>
+      
+      <div class="imagenProducto">
+       
+        
+        <img class="imagenFondo" src="media/img/parte de delante.png" alt="">
+        
+      </div>
+      <div class="cantidadProducto">
+        <div class="cantidad">
+          <button id="menos-btn">-</button>
+          <input type="number" id="cantidad" value="1">
+          <button id="mas-btn">+</button>
         </div>
-        <div class="contacto">
-          <h4>Contacto</h4>
-          <ul>
-            <li>Teléfono: +34 965310199</li>
-            <li>Correo electronico: trenzatress@gmail.com</li>
-          </ul>
-        </div>
+      </div>
+      <!------Carlos------>
+      <div class="cestaProducto">
+        <button>Añadir a la cesta</button>
+      </div>
+      <div class="comprarProducto">
+        <button>Comprar</button>
+      </div>
 
-        <div class="redes">
-          <h4>Redes Sociales</h4>
-          <ul>
-            <li>Twitter: @trenzatress</li>
-            <li>Instagram: @trenzatr3ss</li>
-            <li>Facebook: @trenzatress</li>
-          </ul>
+      <div class="button-container">
+
+        <div class=" anchura anchura1">
+          <button class="size-btn active">1mm</button>
+        </div>
+        <div class="anchura anchura2">
+          <button class="size-btn">2mm</button>
+        </div>
+        <div class="anchura anchura3">
+          <button class="size-btn">3mm</button>
+        </div>
+        <div class="anchura anchura4">
+          <button class="size-btn">4mm</button>
+        </div>
+        <div class="anchura anchura5">
+          <button class="size-btn">5mm</button>
+        </div>
+        <div class="anchura anchura6">
+          <button class="size-btn">6mm</button>
         </div>
       </div>
 
-      <div class="low-footer">TrenzaTress, S.L</div>
-    </footer>
-  </body>
+      <!------Lucia------>
+      <div class="lineaProducto"></div>
+      <div class="descrpcionProducto"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="high-footer">
+      <div class="localizacion">
+        <h4>Localizacion</h4>
+        <ul>
+          <li>Ctra. Callosa - Catral, 274 (Barrio San José-Lo Meca)</li>
+          <li>03360 Callosa de Segura, Alicante</li>
+        </ul>
+      </div>
+      <div class="contacto">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Teléfono: +34 965310199</li>
+          <li>Correo electronico: trenzatress@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="redes">
+        <h4>Redes Sociales</h4>
+        <ul>
+          <li>Twitter: @trenzatress</li>
+          <li>Instagram: @trenzatr3ss</li>
+          <li>Facebook: @trenzatress</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="low-footer">TrenzaTress, S.L</div>
+  </footer>
+</body>
+
 </html>

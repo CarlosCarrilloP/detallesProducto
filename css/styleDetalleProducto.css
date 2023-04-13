@@ -278,6 +278,141 @@ body footer .low-footer{
 /*CSS detalles Producto*/
 /* colores usados https://coolors.co/feffff-f6f0e3-d3b98d-c29a56-ede0c9*/
 
+
+
+.imagenProducto {
+  position: relative;
+    
+   height: 400px;
+    padding: 10px;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
+    transition: all .3s ease;
+  }
+  .imagenProducto:hover{
+    transform: perspective(250px) 
+    translateY(-5%)
+    translateZ(0);
+  }
+  .imagenProducto::before{
+    content: '' ;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      
+    transparent 10%, 
+    rgba(0,0,0,0.1)30%,
+    rgba(0, 0, 0, 0.26)95%);
+    opacity: 0;
+    transition: all .3s ease;
+  }
+  .imagenProducto:hover::before{
+    opacity: 1;
+  }
+ 
+  .imagenProducto .imagenFondo {
+    
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+
+  .tituloDescripcion {
+    margin-bottom: 20px;
+   padding-right: 110px;
+    
+  }
+  .descripcion1{
+    list-style: none;
+    font-size: 15px;
+  }
+  .descripcion2{
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  .descripcionProducto{
+    margin-top: 40px;
+  }
+ .cantidadProducto button{
+    height: 30px;
+    width: 20px;
+ }
+ 
+ .cantidad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .cantidad input {
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+  }
+
+  .cantidad button {
+    width: 25%;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: #eee;
+    
+  }
+
+  .cantidad button:hover {
+    background-color: #C29A56;
+  }
+
+  .cantidad button:active {
+    background-color: #ccc;
+}
+.valoracion {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: none;
+    outline: none;
+  }
+
+  .valoracion input {
+    display: none;
+  }
+
+  .valoracion label {
+    display: inline-block;
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .valoracion label:before {
+    content: '★';
+    font-size: 24px;
+    padding: 0 2px;
+  }
+
+  .valoracion input:checked ~ label {
+    color: #f7d500;
+  }
+
+  .valoracion input:checked ~ label:before {
+    content: '★';
+  }
+/**/
 .detalleproducto {  display: grid;
     grid-template-columns: 0.3fr 1.2fr 1.3fr 1.1fr 1.2fr 1.2fr 1.2fr 0.3fr;
     grid-template-rows: 2.8fr 0.5fr 0.6fr 0.7fr 0.3fr 3.7fr 0.5fr;
