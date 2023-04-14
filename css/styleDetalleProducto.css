@@ -530,11 +530,12 @@ body footer .low-footer{
   
 .descrpcionProducto { grid-area: descrpcionProducto; }
   
-/*Estilos para la barra separadora de ambas partes*/
+/* Estilos para la barra separadora de ambas partes */
 .lineaProducto{
     padding-top: 3%;
 }
 
+/* Estilos para el contenido de la barra */
 .rellenoLineaProducto{
     background-color: #C29A56;
     width: 100%;
@@ -544,12 +545,14 @@ body footer .low-footer{
     justify-content: center;
 }
   
+/* Estilos para dejar espacio entre la barra y el cuadro del texto */
 .descrpcionProducto{
     background-color: #d3b98d;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
+/* Estilos para los textos de dentro del recuadro */
 .descrpcionProducto .rellenodescrpcionProducto .tituloApartado {
     padding-top: 1%;
     padding-left: 3%;
@@ -566,8 +569,6 @@ body footer .low-footer{
     padding-top: 1%;
     padding-left: 5%;
 }
-  
- 
 
   
 .low-footer { grid-area: low-footer; }  
