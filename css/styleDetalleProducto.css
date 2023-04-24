@@ -579,3 +579,11 @@ body footer .low-footer {
 .low-footer {
   grid-area: low-footer;
 }
+
+.precio{
+  padding-left: 5%;
+  padding-top: 2%;
+  font-size: 150%;
+  color:rgb(170, 109, 34);
+  font-weight: bold;
+}
