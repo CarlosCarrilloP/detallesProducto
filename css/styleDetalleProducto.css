@@ -1,541 +1,544 @@
 /*CSS General*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .logo {
-    max-width: 5rem;
+  max-width: 5rem;
 }
 
 .nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
 }
 
 .nav-list li a {
-    text-decoration: none;
-    color: #1c1c1c;
+  text-decoration: none;
+  color: #1c1c1c;
 }
 
 .abrir-menu,
 .cerrar-menu {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 550px) {
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-    .abrir-menu {
-        color: #1c1c1c;
-    }
+  .abrir-menu {
+    color: #1c1c1c;
+  }
 
-    .cerrar-menu {
-        color: #ececec;
-    }
+  .cerrar-menu {
+    color: #ececec;
+  }
 
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 1rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-list li a {
-        color: #ecececec;
-    }
-}
-
-
-
-body main .intro{
-    background-color: #d3b98d;
+  .nav {
+    opacity: 0;
+    visibility: hidden;
     display: flex;
-    justify-content: baseline;
-    padding: 2em;
-    gap: 5%;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
 
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #ecececec;
+  }
 }
 
-body main .intro .text h1{
-    font-size:xxx-large ;
-    margin-bottom: 2%;
+body main .intro {
+  background-color: #d3b98d;
+  display: flex;
+  justify-content: baseline;
+  padding: 2em;
+  gap: 5%;
 }
 
-body main .intro .text{
-    width: 70%;
+body main .intro .text h1 {
+  font-size: xxx-large;
+  margin-bottom: 2%;
 }
 
-body main .intro .text p{
-    font-size: xx-large;
-    margin: 2%;
+body main .intro .text {
+  width: 70%;
 }
 
-body main .intro .text .boton-productos{
-    padding: 1%;
-    margin: 3% 1%;
-    background: #C29A56;
-    width: fit-content;
-    border-radius:10px;
-    font-size: larger;
-    box-shadow: 8px 10px 10px black;
-    border: solid black 1px;
+body main .intro .text p {
+  font-size: xx-large;
+  margin: 2%;
 }
 
-body main .intro img{
-    width: 20%;
+body main .intro .text .boton-productos {
+  padding: 1%;
+  margin: 3% 1%;
+  background: #c29a56;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: larger;
+  box-shadow: 8px 10px 10px black;
+  border: solid black 1px;
 }
 
-body main .cards{
-    display: flex;
-    justify-content: space-around;
-    padding: 3em 2em;
-    gap: 1%;
-    background-color: #F6F0E3;
+body main .intro img {
+  width: 20%;
 }
 
-body main .cards .calidad{
-    width: 32vw;
-    background-color: #d3b98d;
-    padding: 1%;
-    text-align: center;
-    border-radius: 10px;
-    font-size: x-large;
-    border: solid 1% rgb(108, 87, 61);
-    box-shadow: 8px 10px 10px black;
-    border: solid black 1px;
+body main .cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 2em;
+  gap: 1%;
+  background-color: #f6f0e3;
 }
 
-body main .cards .compromiso{
-    width: 32vw;
-    background-color: #d3b98d;
-    padding: 1%;
-    text-align: center;
-    border-radius: 10px;
-    font-size: x-large;
-    box-shadow: 8px 10px 10px black;
-    border: solid black 1px;
+body main .cards .calidad {
+  width: 32vw;
+  background-color: #d3b98d;
+  padding: 1%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: x-large;
+  border: solid 1% rgb(108, 87, 61);
+  box-shadow: 8px 10px 10px black;
+  border: solid black 1px;
 }
 
-body main .cards .valores{
-    width: 32vw;
-    background-color: #d3b98d;
-    padding: 1%;
-    text-align: center;
-    border-radius: 10px;
-    font-size: x-large;
-    box-shadow: 8px 10px 10px black;
-    border: solid black 1px;
+body main .cards .compromiso {
+  width: 32vw;
+  background-color: #d3b98d;
+  padding: 1%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: x-large;
+  box-shadow: 8px 10px 10px black;
+  border: solid black 1px;
 }
 
-body main .formulario{
-    text-align: center;
-    background-color: #d3b98d;
-    padding: 1%;
+body main .cards .valores {
+  width: 32vw;
+  background-color: #d3b98d;
+  padding: 1%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: x-large;
+  box-shadow: 8px 10px 10px black;
+  border: solid black 1px;
 }
 
-
-body main .formulario h1{
-    margin: 1%;
+body main .formulario {
+  text-align: center;
+  background-color: #d3b98d;
+  padding: 1%;
 }
 
-body main .formulario .info{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    margin: 3%;
+body main .formulario h1 {
+  margin: 1%;
 }
 
-body main .formulario .info .nom{
-    width: fit-content;
-    font-size: large;
-    padding: 1%;
-    border-radius: 8px;
-    background-color: #F6F0E3;
-    border: solid 2px black;
+body main .formulario .info {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin: 3%;
 }
 
-
-body main .formulario .info .tel{
-    width: fit-content;
-    font-size: large;
-    padding: 1%;
-    border-radius: 8px;
-    background-color: #F6F0E3;
-    border: solid 2px black;
+body main .formulario .info .nom {
+  width: fit-content;
+  font-size: large;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #f6f0e3;
+  border: solid 2px black;
 }
 
-body main .formulario .info .apel{
-    width: fit-content;
-    font-size: large;
-    padding: 1%;
-    border-radius: 8px;
-    background-color: #F6F0E3;
-    border: solid 2px black;
+body main .formulario .info .tel {
+  width: fit-content;
+  font-size: large;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #f6f0e3;
+  border: solid 2px black;
 }
 
-body main .formulario .info .correo{
-    width: fit-content;
-    font-size: large;
-    padding: 1%;
-    border-radius: 8px;
-    background-color: #F6F0E3;
-    border: solid 2px black;
+body main .formulario .info .apel {
+  width: fit-content;
+  font-size: large;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #f6f0e3;
+  border: solid 2px black;
 }
 
-body main .formulario textarea{
-    padding: 0.5%;
-    border-radius: 10px;
-    background-color:#F6F0E3;
-    font-size: large;
-    border: solid 2px black;
-    font-family: sans-serif;
+body main .formulario .info .correo {
+  width: fit-content;
+  font-size: large;
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #f6f0e3;
+  border: solid 2px black;
 }
 
-body main .formulario button{
-    margin: 1%;
-    background-color: #C29A56;
-    padding: 1% 1%;
-    border-radius: 10px;
-    font-size: large;
+body main .formulario textarea {
+  padding: 0.5%;
+  border-radius: 10px;
+  background-color: #f6f0e3;
+  font-size: large;
+  border: solid 2px black;
+  font-family: sans-serif;
 }
 
-body footer .high-footer{
-    text-align: center;
-    display: flex;
-    padding: 1%;
-    background-color: #F6F0E3;
-    
+body main .formulario button {
+  margin: 1%;
+  background-color: #c29a56;
+  padding: 1% 1%;
+  border-radius: 10px;
+  font-size: large;
 }
 
-body footer .high-footer ul li{
-    list-style: none;
+body footer .high-footer {
+  text-align: center;
+  display: flex;
+  padding: 1%;
+  background-color: #f6f0e3;
 }
 
-body footer .high-footer .localizacion{
-    width: 34vw;
-}
-body footer .high-footer .contacto{
-    width: 34vw;
-}
-body footer .high-footer .redes{
-    width: 34vw;
+body footer .high-footer ul li {
+  list-style: none;
 }
 
-body footer .low-footer{
-    background: #C29A56;
-    text-align: center;
-
-    padding: 1%;
+body footer .high-footer .localizacion {
+  width: 34vw;
+}
+body footer .high-footer .contacto {
+  width: 34vw;
+}
+body footer .high-footer .redes {
+  width: 34vw;
 }
 
-.descuento{
-    background-color: #C29A56;
-    width: 100%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    display: flex;
-    justify-content: center;
-    color:#Ffffff;
+body footer .low-footer {
+  background: #c29a56;
+  text-align: center;
+
+  padding: 1%;
+}
+
+.descuento {
+  background-color: #c29a56;
+  width: 100%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
 }
 /*CSS detalles Producto*/
 /* colores usados https://coolors.co/feffff-f6f0e3-d3b98d-c29a56-ede0c9*/
 
-
-
 .imagenProducto {
   position: relative;
-    
-   height: 400px;
-    padding: 10px;
-    width: 400px;
-    margin-left: 100px;
-    margin-top: 20px;
-    transition: all .3s ease;
-  }
-  .imagenProducto:hover{
-    transform: perspective(250px) 
-    translateY(-5%)
-    translateZ(0);
-  }
-  .imagenProducto::before{
-    content: '' ;
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(
-      
-    transparent 10%, 
-    rgba(0,0,0,0.1)30%,
-    rgba(0, 0, 0, 0.26)95%);
-    opacity: 0;
-    transition: all .3s ease;
-  }
-  .imagenProducto:hover::before{
-    opacity: 1;
-  }
- 
-  .imagenProducto .imagenFondo {
-    
-    border-radius: 4px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
 
-  .tituloDescripcion {
-    margin-bottom: 20px;
-   padding-right: 110px;
-    
-  }
-  .descripcion1{
-    list-style: none;
-    font-size: 15px;
-  }
-  .descripcion2{
-    padding-left: 30px;
-    padding-top: 10px;
-  }
-  .descripcionProducto{
-    margin-top: 40px;
-  }
- .cantidadProducto button{
-    height: 30px;
-    width: 20px;
- }
- 
- .cantidad {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100px;
-    height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-  }
+  height: 400px;
+  padding: 10px;
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.imagenProducto:hover {
+  transform: perspective(250px) translateY(-5%) translateZ(0);
+}
+.imagenProducto::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    transparent 10%,
+    rgba(0, 0, 0, 0.1) 30%,
+    rgba(0, 0, 0, 0.26) 95%
+  );
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.imagenProducto:hover::before {
+  opacity: 1;
+}
 
-  .cantidad input {
-    text-align: center;
-    width: 50%;
-    height: 100%;
-    font-size: 16px;
-    border: none;
-  }
+.imagenProducto .imagenFondo {
+  border-radius: 4px;
+  object-fit: cover;
+  width: 100%;
+}
 
-  .cantidad button {
-    width: 25%;
-    height: 100%;
-    font-size: 16px;
-    border: none;
-    background-color: #eee;
-    
-  }
+.tituloDescripcion {
+  margin-bottom: 20px;
+  padding-right: 110px;
+}
+.descripcion1 {
+  list-style: none;
+  font-size: 15px;
+}
+.descripcion2 {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.descripcionProducto {
+  margin-top: 40px;
+}
+.cantidadProducto button {
+  height: 30px;
+  width: 20px;
+}
 
-  .cantidad button:hover {
-    background-color: #C29A56;
-  }
+.cantidad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
-  .cantidad button:active {
-    background-color: #ccc;
+.cantidad input {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+}
+
+.cantidad button {
+  width: 25%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  background-color: #eee;
+}
+
+.cantidad button:hover {
+  background-color: #c29a56;
+}
+
+.cantidad button:active {
+  background-color: #ccc;
 }
 .valoracion {
-    display: inline-flex;
-    flex-direction: row-reverse;
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    border: none;
-    outline: none;
-  }
+  display: inline-flex;
+  flex-direction: row-reverse;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: none;
+  outline: none;
+}
 
-  .valoracion input {
-    display: none;
-  }
+.valoracion input {
+  display: none;
+}
 
-  .valoracion label {
-    display: inline-block;
-    font-size: 24px;
-    color: #ccc;
-    cursor: pointer;
-  }
+.valoracion label {
+  display: inline-block;
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
 
-  .valoracion label:before {
-    content: '★';
-    font-size: 24px;
-    padding: 0 2px;
-  }
+.valoracion label:before {
+  content: "★";
+  font-size: 24px;
+  padding: 0 2px;
+}
 
-  .valoracion input:checked ~ label {
-    color: #f7d500;
-  }
+.valoracion input:checked ~ label {
+  color: #f7d500;
+}
 
-  .valoracion input:checked ~ label:before {
-    content: '★';
-  }
+.valoracion input:checked ~ label:before {
+  content: "★";
+}
 /**/
-.detalleproducto {  display: grid;
-    grid-template-columns: 0.3fr 1.2fr 1.3fr 1.1fr 1.2fr 1.2fr 1.2fr 0.3fr;
-    grid-template-rows: 2.8fr 0.5fr 0.6fr 0.7fr 0.3fr 3.7fr 0.5fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    align-items: stretch;
-    grid-template-areas:
-      ". imagenProducto imagenProducto imagenProducto descripcionProducto descripcionProducto descripcionProducto ."
-      ". imagenProducto imagenProducto imagenProducto cantidadProducto cantidadProducto cantidadProducto ."
-      ". . . . cestaProducto . comprarProducto ."
-      ". button-container button-container button-container button-container button-container button-container ."
-      ". lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto ."
-      ". descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto ."
-      ". low-footer low-footer low-footer low-footer low-footer low-footer .";
+.detalleproducto {
+  display: grid;
+  grid-template-columns: 0.3fr 1.2fr 1.3fr 1.1fr 1.2fr 1.2fr 1.2fr 0.3fr;
+  grid-template-rows: 2.8fr 0.5fr 0.6fr 0.7fr 0.3fr 3.7fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+  grid-template-areas:
+    ". imagenProducto imagenProducto imagenProducto descripcionProducto descripcionProducto descripcionProducto ."
+    ". imagenProducto imagenProducto imagenProducto cantidadProducto cantidadProducto cantidadProducto ."
+    ". . . . cestaProducto . comprarProducto ."
+    ". button-container button-container button-container button-container button-container button-container ."
+    ". lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto lineaProducto ."
+    ". descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto descrpcionProducto ."
+    ". low-footer low-footer low-footer low-footer low-footer low-footer .";
 }
 
 /*---------------Joaquin--------------*/
-.descripcionProducto { grid-area: descripcionProducto; }
-  
-.imagenProducto { grid-area: imagenProducto; }
-  
-.cantidadProducto { grid-area: cantidadProducto; }
+.descripcionProducto {
+  grid-area: descripcionProducto;
+}
+
+.imagenProducto {
+  grid-area: imagenProducto;
+}
+
+.cantidadProducto {
+  grid-area: cantidadProducto;
+}
 
 /*--------------Carlos----------*/
-.cestaProducto { grid-area: cestaProducto; }
-  
-.comprarProducto { grid-area: comprarProducto; }
+.cestaProducto {
+  grid-area: cestaProducto;
+}
+
+.comprarProducto {
+  grid-area: comprarProducto;
+}
 
 /* Estilo para el contenedor de los botones */
 .button-container {
-    display: flex; /* Pone los elementos en línea */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 10px; /* Añade un espacio de 10px entre los botones */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "anchura1 anchura2 anchura3 anchura4 anchura5 anchura6";
-    grid-area: button-container;
-    
+  display: flex; /* Pone los elementos en línea */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 10px; /* Añade un espacio de 10px entre los botones */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2% 2%;
+  grid-auto-flow: row;
+  grid-template-areas: "anchura1 anchura2 anchura3 anchura4 anchura5 anchura6";
+  grid-area: button-container;
 }
 
-.anchura6 { grid-area: anchura6; }
-  
-.anchura1 { grid-area: anchura1; }
-  
-.anchura2 { grid-area: anchura2; }
-  
-.anchura3 { grid-area: anchura3; }
-  
-.anchura4 { grid-area: anchura4; }
-  
-.anchura5 { grid-area: anchura5; }
+.anchura6 {
+  grid-area: anchura6;
+}
 
+.anchura1 {
+  grid-area: anchura1;
+  
+}
+
+.anchura2 {
+  grid-area: anchura2;
+  
+}
+
+.anchura3 {
+  grid-area: anchura3;
+}
+
+.anchura4 {
+  grid-area: anchura4;
+}
+
+.anchura5 {
+  grid-area: anchura5;
+}
 
 /* Estilo para cada botón */
 .size-btn {
-    padding: 8px;
-    font-size: 16px;
-    color: #555;
-    background-color: #f9f9f9;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  padding: 8px;
+  font-size: 16px;
+  color: #555;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   
-/* Estilo para el botón activo */
-.size-btn.active {
-    background-color: #C29A56;
-    color: #fff;
 }
 
-.anchura{
-    margin-left: 1%;
+/* Estilo para el botón activo */
+.size-btn.active {
+  background-color: #c29a56;
+  color: #fff;
+}
+
+.anchura {
+  margin-left: 1%;
 }
 
 .cestaProducto,
 .comprarProducto {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .cestaProducto button,
 .comprarProducto button {
-    background-color: #C29A56;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #c29a56;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .cestaProducto button:hover,
 .comprarProducto button:hover {
-    background-color: #D3B98D;
+  background-color: #d3b98d;
 }
-
-
-
-
-
 
 /*-------------Lucia--------------*/
 .lineaProducto { grid-area: lineaProducto; }
   
 .descrpcionProducto { grid-area: descrpcionProducto; }
   
-/* Estilos para la barra separadora de ambas partes */
+/*Estilos para la barra separadora de ambas partes*/
 .lineaProducto{
     padding-top: 3%;
 }
 
-/* Estilos para el contenido de la barra */
 .rellenoLineaProducto{
     background-color: #C29A56;
     width: 100%;
@@ -545,38 +548,30 @@ body footer .low-footer{
     justify-content: center;
 }
   
-/* Estilos para dejar espacio entre la barra y el cuadro del texto */
 .descrpcionProducto{
     background-color: #d3b98d;
     margin-top: 3%;
     margin-bottom: 3%;
 }
 
-/* Estilos para los textos de dentro del recuadro */
 .descrpcionProducto .rellenodescrpcionProducto .tituloApartado {
-    padding-top: 1%;
-    padding-left: 3%;
-    font-size: 1.4rem;
+  padding-top: 1%;
+  padding-left: 3%;
+  font-size: 1.4rem;
 }
-  
+
 .descrpcionProducto .rellenodescrpcionProducto .nombreProducto {
-    padding-top: 1%;
-    padding-left: 3%;
-    font-size: 1.2rem;
+  padding-top: 1%;
+  padding-left: 3%;
+  font-size: 1.2rem;
+}
+
+.descrpcionProducto .rellenodescrpcionProducto .especifProducto {
+  padding-top: 1%;
+  padding-left: 5%;
 }
   
-.descrpcionProducto .rellenodescrpcionProducto .especifProducto {
-    padding-top: 1%;
-    padding-left: 5%;
-}
+ 
 
   
 .low-footer { grid-area: low-footer; }  
-
-.precio{
-    padding-left: 5%;
-    padding-top: 2%;
-    font-size: 150%;
-    color:rgb(170, 109, 34);
-    font-weight: bold;
-}
