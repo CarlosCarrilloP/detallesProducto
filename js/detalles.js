@@ -28,7 +28,7 @@ function añadirALaCesta() {
     title: "¡Producto añadido!",
     text: "Continúa navegando en nuestros productos",
     icon: "success",
-    button: "Ver más",
+    button: "Más productos",
   });
 }
   
@@ -36,7 +36,9 @@ function añadirALaCesta() {
   function comprar() {
     swal({
       title: "¡Producto comprado!",
+      text: "Gracias por su confianza",
       icon: "success",
+      button: "Seguir",
     });
   }
   
@@ -111,4 +113,3 @@ disminuirBtn.addEventListener("click", function() {
    }
    precio.textContent = `${parseInt(cantidadInput2.value) * precioUnitario}€`; // Actualizar el precio total
  });
- 
