@@ -34,7 +34,10 @@ function añadirALaCesta() {
   
   // Función que se ejecuta cuando se hace clic en el botón "Comprar"
   function comprar() {
-    alert('Producto comprado');
+    swal({
+      title: "¡Producto comprado!",
+      icon: "success",
+    });
   }
   
   // Espera a que la página haya terminado de cargar
