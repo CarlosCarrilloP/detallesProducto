@@ -281,6 +281,8 @@ body footer .low-footer {
   margin-left: 100px;
   margin-top: 20px;
   transition: all 0.3s ease;
+
+  overflow: hidden; /*las imagenes no aparecen*/
 }
 .imagenProducto:hover {
   transform: perspective(250px) translateY(-5%) translateZ(0);

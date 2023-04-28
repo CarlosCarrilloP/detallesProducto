@@ -113,3 +113,28 @@ disminuirBtn.addEventListener("click", function() {
    }
    precio.textContent = `${parseInt(cantidadInput2.value) * precioUnitario}€`; // Actualizar el precio total
  });
+
+
+
+//////////////////////Carousel con imágenes para los tags/////////////////////
+
+// PROBAR CON LO SIGUIENTE (adaptarlo a mi código) -> document.getElementById("myButton").onclick = function() {
+
+
+function cambiarImagen() {
+  // llamada a todos los botones y las imágenes del carousel
+  let botones = document.querySelectorAll('.size-btn');
+  let imagenes = document.querySelectorAll('.imagenFondo');
+
+  botones.forEach((boton, active) => { // Recorremos todos los botones
+    boton.addEventListener('click', () => { // Al hacer click sobre cada botón, se ejecuta lo que va a continuación
+      imagenes.forEach((imagenProd, img) => { // Recorremos todas las imágenes
+        if (img === active) {
+          imagenProd.style.display = 'block'; // Si pulsamos sobre el botón, muestra la imagen
+        } else {
+          imagenProd.style.display = 'none'; // Si cambiamos (el botón no está en active), oculta la imagen
+        }
+      });
+    });
+  });
+}
